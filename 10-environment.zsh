@@ -7,9 +7,13 @@
 # Preferred editor variables
 export EDITOR='vim'
 
-# LS colors, revert to standard BSD colors (WTF cyan)
-LSCOLORS="Exfxcxdxbxegedabagacad"; export LSCOLORS
-CLICOLOR=1; export CLICOLOR
+### UBUNTU SPECIFIC START ###
+#
+if [[ -s '/etc/zsh_command_not_found' ]]; then
+  source '/etc/zsh_command_not_found'
+fi
+#
+#  ### UBUNTU SPECIFIC END ###
 
 #JAVA ENV VARIABLES
 #export JAVA_HOME='/usr/local/openjdk12'
